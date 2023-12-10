@@ -29,4 +29,10 @@ public class AutomationExercisePage {
 
     @FindBy(partialLinkText = "ogout")
     public WebElement logOutLinki;
+
+    @FindBy(className = "login-form")
+    public WebElement loginToYourAccount;
+
+    @FindBy(partialLinkText = "ccount")
+    public WebElement deleteLinki;
 }
