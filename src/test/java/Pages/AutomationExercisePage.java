@@ -33,9 +33,24 @@ public class AutomationExercisePage {
     @FindBy(className = "login-form")
     public WebElement loginToYourAccount;
 
+    @FindBy(className = "signup-form")
+    public WebElement newSignUpDogrulamasi;
+
     @FindBy(partialLinkText = "ccount")
     public WebElement deleteLinki;
 
     @FindBy(xpath = "//*[@style='color: red;']")
     public WebElement yanlisGirisText;
+
+    @FindBy(xpath = "//*[@type='text']")
+    public WebElement newUserIsimLinki;
+
+    @FindBy(xpath = "(//*[@type='email'])[2]")
+    public WebElement newUserMailLinki;
+
+    @FindBy(xpath = "(//*[@type='submit'])[2]")
+    public WebElement newUserSignupButon;
+
+    @FindBy(xpath = "//*[@style='color: red;']")
+    public WebElement mailAdresiZatenMevcutText;
 }
