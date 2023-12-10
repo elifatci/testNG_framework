@@ -35,4 +35,7 @@ public class AutomationExercisePage {
 
     @FindBy(partialLinkText = "ccount")
     public WebElement deleteLinki;
+
+    @FindBy(xpath = "//*[@style='color: red;']")
+    public WebElement yanlisGirisText;
 }

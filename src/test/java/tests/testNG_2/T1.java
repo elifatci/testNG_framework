@@ -19,7 +19,7 @@ public class T1 {
         //2. Navigate to url 'http://automationexercise.com'
         Driver.getDriver().get(ConfigReader.getProperty("automationUrl"));
         //3. Verify that home page is visible successfully
-        String expectedTitle=ConfigReader.getProperty("automationTitle");
+        String expectedTitle=ConfigReader.getProperty("automationAnasayfaTitle");
         String actualTitle=Driver.getDriver().getTitle();
         SoftAssert softAssert=new SoftAssert();
         softAssert.assertEquals(actualTitle,expectedTitle,"Bulundugunuz sayfa anasayfa degil");
