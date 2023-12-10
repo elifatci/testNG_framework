@@ -7,7 +7,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 
 public class T5 {
-    @Test
+    @Test(groups = {"smoke", "regression"})
     public void exercise05(){
         //2. Navigate to url 'http://automationexercise.com'
         Driver.getDriver().get(ConfigReader.getProperty("automationUrl"));

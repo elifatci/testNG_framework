@@ -16,7 +16,7 @@ public class T2 {
     //3.Test : “Nutella” icin arama yapildiysa ilk urunu tiklayin ve fiyatinin $15.62
     //oldugunu test edin
 
-    @Test
+    @Test(groups = {"regression"})
     public void anaSayfaTesti() throws InterruptedException {
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
         Thread.sleep(10000);
@@ -30,7 +30,7 @@ public class T2 {
         amazonPage.aramaKutusu.sendKeys("Nutella"+ Keys.ENTER);
     }
 
-    @Test(dependsOnMethods = "aramaTesti")
+    @Test(dependsOnMethods = "aramaTesti", groups = {"smoke"})
     public void fiyatTesti(){
     AmazonPage amazonPage=new AmazonPage();
     amazonPage.ilkUrunLinki.click();

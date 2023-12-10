@@ -14,7 +14,7 @@ import java.time.Duration;
 
 public class T4 {
 
-    @Test
+    @Test(groups = {"regression"})
     public void negatifTest() throws InterruptedException {
         //1- https://www.qualitydemy.com/ anasayfasina gidin
         Driver.getDriver().get(ConfigReader.getProperty("qualityUrl"));
