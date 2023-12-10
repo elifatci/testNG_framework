@@ -1,18 +1,38 @@
 package tests.testNG_2;
 
+import Pages.AmazonPage;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+import utilities.ConfigReader;
+import utilities.Driver;
+import utilities.ReusableMethods;
+
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class T6 {
     @Test
-    public void test01(){
+    public void satirSayisi() {
 
-        //1 Amazon anasayfaya gidebilecek sekilde bir page sayfasi olusturun : AmazonPage
-        //2 Amazon ana sayfasinda en altta bulunan Webtable’i inceleyebilmek icin
-        //AmazonPage clasinda en altta gitme isini yapacak bir method olusturun
-        //3 Tests paketi altinda yeni bir class olusturun: D26_AmazonSatirSutunSayisi
-        //4 Bu class’in altinda bir test method olusturun : satirSayisi( ) ve webtable’da 10
-        //satir oldugunu test edin
-        //5 Yeni bir method olusturun : sutunSayisi( ) ve yazi olan sutun sayisinin 7oldugunu
-        //test edin
+        Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
+        ReusableMethods.Wait(9);
+        // satirSayisi( ) ve webtable’da 10 satir oldugunu test edin
+        AmazonPage amazonPage = new AmazonPage();
+        List<String> satirStr = new ArrayList<>();
+        for (int i = 0; i < amazonPage.TabloSatir.size(); i++) {
+            satirStr.add(amazonPage.TabloSatir.get(i).getText());
+            System.out.println(i + 1 + ". satir elemanlari :" + satirStr.get(i));
+        }
+
+        Assert.assertTrue(amazonPage.TabloSatir.size() == 10, "Satir sayisi 10'a esit degildir");
+
+    }
+
+    @Test
+    public void sutunSayisi() {
+        // Yeni bir method olusturun : sutunSayisi( ) ve yazi olan sutun sayisinin 7oldugunu test edin
+        AmazonPage amazonPage = new AmazonPage();
+        Assert.assertTrue(amazonPage.TabloSutun.size() == 7, "Sutun sayisi 7'ye esit degildir");
     }
 }
