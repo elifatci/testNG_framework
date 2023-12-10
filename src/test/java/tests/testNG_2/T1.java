@@ -44,6 +44,7 @@ public class T1 {
         expectedTitle=ConfigReader.getProperty("automationLoginTitle");
         actualTitle=Driver.getDriver().getTitle();
         softAssert.assertEquals(actualTitle,expectedTitle,"Giris sayfasi acilamadi");
+        Driver.closeDriver();
     }
 
 }

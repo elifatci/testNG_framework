@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="istenen classlari calistirma">
+    <test name="coklu calistirma test">
+        <classes>
+            <class name="tests.testNG_1.T4"></class>
+            <class name="tests.testNG_1.T6"></class>
+            <class name="tests.testNG_2.T3"></class>
+        </classes>
+    </test>
+</suite>

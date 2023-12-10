@@ -33,6 +33,7 @@ public class T2 {
         //9. Click 'Delete Account' button
         automationExercisePage.deleteLinki.click();
 
+        Driver.closeDriver();
 
     }
 }

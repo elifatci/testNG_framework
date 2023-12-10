@@ -28,5 +28,6 @@ public class T3 {
         automationExercisePage.loginButonu.click();
         //8. Verify error 'Your email or password is incorrect!' is visible
         softAssert.assertTrue(automationExercisePage.yanlisGirisText.isDisplayed(),"Hatali giris yapildi yazisi gorunur degil");
+        Driver.closeDriver();
     }
 }
