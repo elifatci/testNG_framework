@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class AutomationExercisePage {
 
     public AutomationExercisePage(){
@@ -53,4 +55,7 @@ public class AutomationExercisePage {
 
     @FindBy(xpath = "//*[@style='color: red;']")
     public WebElement mailAdresiZatenMevcutText;
+
+    @FindBy(className = "col-sm-4")
+    public List<WebElement> anasayfaUrunListesi;
 }
