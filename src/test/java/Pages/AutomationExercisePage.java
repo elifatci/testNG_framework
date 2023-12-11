@@ -58,4 +58,22 @@ public class AutomationExercisePage {
 
     @FindBy(className = "col-sm-4")
     public List<WebElement> anasayfaUrunListesi;
+
+    @FindBy(partialLinkText = "Contact")
+    public WebElement contactUs;
+
+    @FindBy(xpath = "(//*[@class='title text-center'])[2]")
+    public WebElement getInTouch;
+
+    @FindBy(xpath = "(//*[@type='text'])[1]")
+    public WebElement contactNameLinki;
+
+    @FindBy(xpath = "//*[@name='submit']")
+    public WebElement contactSubmit;
+
+    @FindBy(xpath = "(//*[@style='display: block;'])[1]")
+    public WebElement contactSuccessMessage;
+
+    @FindBy(xpath = "//*[@class='fa fa-home']")
+    public WebElement homeLinki;
 }
