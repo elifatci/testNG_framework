@@ -76,4 +76,10 @@ public class AutomationExercisePage {
 
     @FindBy(xpath = "//*[@class='fa fa-home']")
     public WebElement homeLinki;
+
+    @FindBy(partialLinkText = "Cases")
+    public WebElement testCaseLink;
+
+    @FindBy(xpath = "//b")
+    public WebElement testCaseText;
 }
