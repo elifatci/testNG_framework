@@ -82,4 +82,14 @@ public class AutomationExercisePage {
 
     @FindBy(xpath = "//b")
     public WebElement testCaseText;
+
+    @FindBy(partialLinkText = "Products")
+    public WebElement productsButton;
+
+
+    @FindBy(xpath = "(//a[text()='View Product'])[1]")
+    public WebElement firstProductViewProductLink;
+
+    @FindBy(className = "product-information")
+    public WebElement productDetail;
 }
