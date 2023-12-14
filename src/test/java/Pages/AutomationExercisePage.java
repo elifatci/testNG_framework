@@ -92,4 +92,13 @@ public class AutomationExercisePage {
 
     @FindBy(className = "product-information")
     public WebElement productDetail;
+
+    @FindBy(id = "search_product")
+    public WebElement searchProductBox;
+
+    @FindBy(id = "submit_search")
+    public WebElement searchSubmit;
+
+    @FindBy(className = "features_items")
+    public WebElement searchedProductsDetail;
 }
