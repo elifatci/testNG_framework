@@ -101,4 +101,52 @@ public class AutomationExercisePage {
 
     @FindBy(className = "features_items")
     public WebElement searchedProductsDetail;
+
+    @FindBy(xpath = "//a[text()=' Cart']")
+    public WebElement cartButton;
+
+    @FindBy(xpath = "//h2[text()='Subscription']")
+    public WebElement subscriptionText;
+
+    @FindBy(id = "susbscribe_email")
+    public WebElement subscribeEmailBox;
+
+    @FindBy(id = "success-subscribe")
+    public WebElement successSubscribeText;
+
+    @FindBy(xpath = "(//a[@class='btn btn-default add-to-cart'])[1]")
+    public WebElement firstProductAddToCart;
+
+    @FindBy(xpath = "//button[text()='Continue Shopping']")
+    public WebElement continueShopping;
+
+    @FindBy(xpath = "(//a[@class='btn btn-default add-to-cart'])[3]")
+    public WebElement secondProductAddToCart;
+
+    @FindBy(xpath = "//u[text()='View Cart']")
+    public WebElement viewCart;
+
+    @FindBy(className = "product_image")
+    public List<WebElement> cartList;
+
+    @FindBy(xpath = "(//td)[9]")
+    public WebElement firstProductPrice;
+
+    @FindBy(xpath = "(//td)[11]")
+    public WebElement firstProductTotalPrice;
+
+    @FindBy(xpath = "(//td)[15]")
+    public WebElement secondProductPrice;
+
+    @FindBy(xpath = "(//td)[17]")
+    public WebElement secondProductTotalPrice;
+
+    @FindBy(xpath = "(//td)[10]")
+    public WebElement firstProductQuantity;
+
+    @FindBy(xpath = "(//td)[16]")
+    public WebElement secondProductQuantity;
+
+
+
 }
