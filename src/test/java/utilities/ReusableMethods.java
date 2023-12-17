@@ -3,11 +3,14 @@ package utilities;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
 
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class ReusableMethods {
 
@@ -20,6 +23,14 @@ public class ReusableMethods {
             throw new RuntimeException(e);
         }
 
+    }
+
+    public static List<String> stringListeDonustur(List<WebElement>list){
+        List<String> listStr=new ArrayList<>();
+        for (WebElement each :list) {
+            listStr.add(each.getText());
+        }
+       return listStr;
     }
     public static String getScreenshot(String name) throws IOException {
         // naming the screenshot with the current date to avoid duplication

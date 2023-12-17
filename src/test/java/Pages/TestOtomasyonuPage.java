@@ -23,4 +23,20 @@ public class TestOtomasyonuPage {
 
     @FindBy(xpath = "//*[@class=' heading-sm mb-4']")
     public WebElement urunIsmi;
+
+    @FindBy(className = "menu-icon-text")
+    public WebElement accountLink;
+
+    @FindBy(id = "email")
+    public WebElement emailLogin;
+
+    @FindBy(id = "password")
+    public WebElement passwordLogin;
+
+    @FindBy(id = "submitlogin")
+    public WebElement signinButton;
+
+    @FindBy(className = "text-white")
+    public WebElement wrongLogin;
+
 }
