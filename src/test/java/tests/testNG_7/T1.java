@@ -48,6 +48,11 @@ public class T1 {
         usePage.locationIstanbul.click();
         Assert.assertTrue(usePage.QajobList.isDisplayed());
         js.executeScript("arguments[0].scrollIntoView(true)",usePage.QajobList);
+        //4. Check that all jobs’ Position contains “Quality Assurance”, Department contains
+        //“Quality Assurance”, Location contains “Istanbul, Turkey” and “Apply Now” button
+        System.out.println(usePage.QajobList.getText());
+
+
 
     }
 }

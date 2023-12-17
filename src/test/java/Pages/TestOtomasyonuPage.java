@@ -18,11 +18,9 @@ public class TestOtomasyonuPage {
     @FindBy(className = "product-count-text")
     public WebElement aramaSonucu;
 
-    @FindBy(xpath = "(//*[@class='lazy'])[1]")
+    @FindBy(partialLinkText ="APPLEL")
     public WebElement ilkUrun;
 
-    @FindBy(xpath = "//*[@class=' heading-sm mb-4']")
-    public WebElement urunIsmi;
 
     @FindBy(className = "menu-icon-text")
     public WebElement accountLink;
@@ -38,5 +36,21 @@ public class TestOtomasyonuPage {
 
     @FindBy(className = "text-white")
     public WebElement wrongLogin;
+
+    @FindBy(xpath = "//*[@class=' heading-sm mb-4']")
+    public WebElement urunIsmi;
+
+    @FindBy(xpath = "//*[@class='add-to-cart']")
+    public WebElement addToCartLink;
+
+    @FindBy(xpath = "(//*[@class='menu-icon-text'])[3]")
+    public WebElement yourCartLink;
+
+    @FindBy(xpath = "//*[@class='product-title text-center']")
+    public WebElement sepettekiUrunIsmi;
+
+
+
+
 
 }
