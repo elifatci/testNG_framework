@@ -57,6 +57,12 @@ public class UsePage {
     @FindBy(id = "jobs-list")
     public WebElement QajobList;
 
+    @FindBy(xpath = "//*[@class='position-title font-weight-bold']")
+    public List<WebElement> titlePosition;
+
+    @FindBy(xpath = "(//*[@class='position-title font-weight-bold'])[1]")
+    public WebElement firstPositionTitle;
+
 
 
 

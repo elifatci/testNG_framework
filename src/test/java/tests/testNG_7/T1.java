@@ -47,10 +47,20 @@ public class T1 {
         usePage.locationSelect.click();
         usePage.locationIstanbul.click();
         Assert.assertTrue(usePage.QajobList.isDisplayed());
-        js.executeScript("arguments[0].scrollIntoView(true)",usePage.QajobList);
         //4. Check that all jobs’ Position contains “Quality Assurance”, Department contains
         //“Quality Assurance”, Location contains “Istanbul, Turkey” and “Apply Now” button
-        System.out.println(usePage.QajobList.getText());
+       // System.out.println(ReusableMethods.stringListeDonustur(usePage.titlePosition));
+        System.out.println(usePage.firstPositionTitle.getText());
+
+        //5. Click “Apply Now” button and check that this action redirects us to Lever Application
+        //form page
+        //- Test case should be written using any programming language and framework
+        //(Python or Java + Selenium would be preferable)
+        //- No BDD(Cucumber, Quantum, Codeception, etc.) frameworks are allowed
+        //- Screenshot should be taken If test fails one of steps
+        //- Test case should be able to run in Chrome and Firefox browsers and ensure that the
+        //browser is parametrically changeable.
+        //- Test code should fully meet POM requirements
 
 
 

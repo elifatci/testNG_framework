@@ -147,6 +147,14 @@ public class AutomationExercisePage {
     @FindBy(xpath = "(//td)[16]")
     public WebElement secondProductQuantity;
 
+    @FindBy(id = "quantity")
+    public WebElement quantity;
+
+    @FindBy(xpath = "//*[@class='btn btn-default cart']")
+    public WebElement addToCart;
+
+    @FindBy(className = "disabled")
+    public WebElement cartQuantitySize;
 
 
 }
