@@ -38,6 +38,8 @@ public class T1 {
         int actualQuantity= Integer.parseInt(automationExercisePage.cartQuantitySize.getText());
 
         softAssert.assertEquals(actualQuantity,expectedQuantity,"The product added is not displayed on the cart page");
+
+        softAssert.assertAll();
         Driver.closeDriver();
     }
 }

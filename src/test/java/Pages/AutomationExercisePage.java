@@ -157,4 +157,39 @@ public class AutomationExercisePage {
     public WebElement cartQuantitySize;
 
 
+    @FindBy(xpath = "(//*[@class='btn btn-default add-to-cart'])[1]")
+    public WebElement firstProductAddToCartLink;
+
+    @FindBy(xpath = "//*[@class='btn btn-default check_out']")
+    public WebElement proceedToCheckoutLink;
+
+    @FindBy(partialLinkText = "Register")
+    public WebElement registerLoginLink;
+
+
+    @FindBy(id = "id_gender2")
+    public WebElement genderButton;
+
+    @FindBy(partialLinkText = "ontinue")
+    public WebElement continueButton;
+
+    @FindBy(className = "checkout-information")
+    public WebElement adressDetail;
+
+    @FindBy(className = "form-control")
+    public WebElement textArea;
+
+    @FindBy(partialLinkText = "rder")
+    public WebElement placeOrderButton;
+
+    @FindBy(name = "name_on_card")
+    public WebElement cardName;
+
+
+    @FindBy(id = "submit")
+    public WebElement payAndConfirmOrder;
+
+    @FindBy(xpath = "(//*[@class='alert-success alert'])[1]")
+    public WebElement successMessage;
+
 }

@@ -1,0 +1,32 @@
+11:15:45.502 [AWT-EventQueue-0] INFO  c.b.actions.EnableBrowserStack - Setting enable browserstack run update
+11:15:45.522 [AWT-EventQueue-0] INFO  c.b.actions.DisableBrowserStack - Setting disable browserstack run update
+11:15:59.681 [AWT-EventQueue-0] INFO  c.b.actions.EnableBrowserStack - Setting enable browserstack run update
+11:15:59.698 [AWT-EventQueue-0] INFO  c.b.actions.DisableBrowserStack - Setting disable browserstack run update
+11:17:43.515 [AWT-EventQueue-0] INFO  c.b.launchers.LaunchMavenCommand - Integrate source: testng:intellij:v1.1.2
+11:17:43.515 [AWT-EventQueue-0] INFO  c.b.launchers.LaunchMavenCommand - Executing maven archetype command - browserstack-sdk-archetype-integrate
+11:17:43.641 [ApplicationImpl pooled thread 1188] INFO  c.b.l.BrowserStackRunExtension - maven
+11:17:43.641 [ApplicationImpl pooled thread 1188] INFO  com.browserstack.utils.Helpers - null
+11:17:56.510 [java.exe] INFO  c.b.launchers.LaunchMavenCommand - Completed maven archetype command
+11:47:55.673 [AWT-EventQueue-0] INFO  c.b.actions.EnableBrowserStack - Setting enable browserstack run update
+11:47:55.679 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - C:/Users/Elif/.m2/repository/com/browserstack/browserstack-java-sdk/1.12.4/browserstack-java-sdk-1.12.4.jar
+11:47:55.679 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
+11:47:55.698 [AWT-EventQueue-0] INFO  c.b.actions.DisableBrowserStack - Setting disable browserstack run update
+11:47:55.699 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - C:/Users/Elif/.m2/repository/com/browserstack/browserstack-java-sdk/1.12.4/browserstack-java-sdk-1.12.4.jar
+11:47:55.699 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
+11:47:55.715 [AWT-EventQueue-0] INFO  c.b.actions.EnableBrowserStack - Setting enable browserstack run update
+11:47:55.716 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - C:/Users/Elif/.m2/repository/com/browserstack/browserstack-java-sdk/1.12.4/browserstack-java-sdk-1.12.4.jar
+11:47:55.716 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
+11:47:55.731 [AWT-EventQueue-0] INFO  c.b.actions.DisableBrowserStack - Setting disable browserstack run update
+11:47:55.732 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - C:/Users/Elif/.m2/repository/com/browserstack/browserstack-java-sdk/1.12.4/browserstack-java-sdk-1.12.4.jar
+11:47:55.732 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
+11:48:33.163 [AWT-EventQueue-0] INFO  c.b.actions.EnableBrowserStack - Setting enable browserstack run update
+11:48:33.165 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - C:/Users/Elif/.m2/repository/com/browserstack/browserstack-java-sdk/1.12.4/browserstack-java-sdk-1.12.4.jar
+11:48:33.165 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
+11:48:33.181 [AWT-EventQueue-0] INFO  c.b.actions.DisableBrowserStack - Setting disable browserstack run update
+11:48:33.182 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - C:/Users/Elif/.m2/repository/com/browserstack/browserstack-java-sdk/1.12.4/browserstack-java-sdk-1.12.4.jar
+11:48:33.182 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
+11:48:36.193 [AWT-EventQueue-0] INFO  c.b.actions.DisableBrowserStack - Setting disable browserstack run update
+11:48:36.194 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - C:/Users/Elif/.m2/repository/com/browserstack/browserstack-java-sdk/1.12.4/browserstack-java-sdk-1.12.4.jar
+11:48:36.194 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
+11:48:36.204 [AWT-EventQueue-0] INFO  c.b.actions.DisableBrowserStack - Disabling BrowserStack Run
+11:48:36.204 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - setting browserstack enabled to false
