@@ -1,4 +1,4 @@
-package tests.textNG_10;
+package tests.testNG_10;
 
 import Pages.TestOtoFormPage;
 import org.openqa.selenium.WebElement;
