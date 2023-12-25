@@ -20,6 +20,6 @@ public class TestOtoAlertPage {
     @FindBy(xpath = "(//*[@class='j-button'])[3]")
     public WebElement ucuncuAlert;
 
-    @FindBy(id = "result")
+    @FindBy(css = "#result")
     public WebElement resultText;
 }

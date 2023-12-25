@@ -192,4 +192,10 @@ public class AutomationExercisePage {
     @FindBy(xpath = "(//*[@class='alert-success alert'])[1]")
     public WebElement successMessage;
 
+    @FindBy(className = "cart_quantity_delete")
+    public WebElement deleteProductButton;
+
+    @FindBy(className = "product_image")
+    public WebElement productImage;
+
 }
