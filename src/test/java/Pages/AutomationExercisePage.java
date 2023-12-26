@@ -9,9 +9,9 @@ import java.util.List;
 
 public class AutomationExercisePage {
 
-    public AutomationExercisePage(){
+    public AutomationExercisePage() {
 
-        PageFactory.initElements(Driver.getDriver(),this);
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
     @FindBy(xpath = "//a[@href='/login']")
@@ -197,5 +197,27 @@ public class AutomationExercisePage {
 
     @FindBy(className = "product_image")
     public WebElement productImage;
+
+
+    @FindBy(id = "accordian")
+    public WebElement categoryTable;
+
+    @FindBy(xpath = "(//a[@data-toggle='collapse'])[1]")
+    public WebElement womenLink;
+
+    @FindBy(xpath = "(//a[text()='Dress '])[1]")
+    public WebElement categoryDressLink;
+
+    @FindBy(css = ".title.text-center")
+    public WebElement womenDressProductsText;
+
+    @FindBy(xpath = "(//a[@data-toggle='collapse'])[2]")
+    public WebElement menLink;
+
+    @FindBy(xpath = "(//a[text()='Tshirts '])[1]")
+    public WebElement menTshirtsLink;
+
+    @FindBy(css = ".title.text-center")
+    public WebElement menTshirtText;
 
 }
