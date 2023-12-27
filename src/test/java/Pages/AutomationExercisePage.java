@@ -220,4 +220,13 @@ public class AutomationExercisePage {
     @FindBy(css = ".title.text-center")
     public WebElement menTshirtText;
 
+    @FindBy(className = "brands_products")
+    public WebElement brandsText;
+
+
+    @FindBy(xpath = "//*[@class='pull-right']")
+    public List<WebElement> brandsList;
+
+    @FindBy(className = "features_items")
+    public WebElement brandsPage;
 }
