@@ -235,4 +235,16 @@ public class AutomationExercisePage {
 
     @FindBy(css = ".title.text-center")
     public WebElement searchedProductsText;
+
+    @FindBy(xpath = "(//*[@class='col-sm-12'])[1]")
+    public WebElement writeYourReviewText;
+
+    @FindBy(css = "#name")
+    public WebElement writeYourNameBox;
+
+    @FindBy(id = "button-review")
+    public WebElement writeYourSubmitButton;
+
+    @FindBy(css = ".alert-success.alert")
+    public WebElement writeYourSuccessMessage;
 }
