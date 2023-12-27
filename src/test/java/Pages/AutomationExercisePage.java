@@ -229,4 +229,10 @@ public class AutomationExercisePage {
 
     @FindBy(className = "features_items")
     public WebElement brandsPage;
+
+    @FindBy(className = "features_items")
+    public WebElement allProductsPage;
+
+    @FindBy(css = ".title.text-center")
+    public WebElement searchedProductsText;
 }
