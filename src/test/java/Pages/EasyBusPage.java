@@ -28,5 +28,8 @@ public class EasyBusPage {
     @FindBy(className = "title")
     public WebElement verifiedDashboard;
 
+    @FindBy(css = ".iziToast-message.slideIn")
+    public WebElement signalAlert;
+
 
 }
