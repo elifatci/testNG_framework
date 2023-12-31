@@ -14,4 +14,19 @@ public class EasyBusPage {
 
     @FindBy(className = "sign-in")
     public WebElement signInButton;
+
+    @FindBy(id = "username")
+    public WebElement usernameBox;
+
+    @FindBy(css="#password")
+    public WebElement passwordBox;
+
+
+    @FindBy(css = ".account-button.w-100")
+    public WebElement logInButton;
+
+    @FindBy(className = "title")
+    public WebElement verifiedDashboard;
+
+
 }
