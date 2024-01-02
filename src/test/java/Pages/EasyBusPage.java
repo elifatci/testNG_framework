@@ -101,6 +101,33 @@ public class EasyBusPage {
     @FindBy(xpath = "//*[text()='Logout']")
     public WebElement logoutLink;
 
+    @FindBy(xpath = "(//*[@class='has-sub-menu'])[2]")
+    public WebElement supportRequestLink;
+
+    @FindBy(xpath = "//*[text()='Create New']")
+    public WebElement createNewLink;
+
+    @FindBy(name = "subject")
+    public WebElement requestsSubject;
+
+    @FindBy(name = "priority")
+    public WebElement prioritySelect;
+
+    @FindBy(id = "inputMessage")
+    public WebElement requestsMessage;
+
+    @FindBy(id = "recaptcha")
+    public WebElement requestsSubmit;
+
+    @FindBy(xpath = "//*[@class='iziToast-message slideIn']")
+    public WebElement successMessage;
+
+    @FindBy(xpath = "//tr//td[3]")
+    public List<WebElement> supportTicketsTables;
+
+
+
+
 
 
 }

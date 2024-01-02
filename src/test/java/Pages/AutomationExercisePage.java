@@ -247,4 +247,11 @@ public class AutomationExercisePage {
 
     @FindBy(css = ".alert-success.alert")
     public WebElement writeYourSuccessMessage;
+
+
+    @FindBy(xpath = "(//*[@class='title text-center'])[2]")
+    public WebElement recommendItemsText;
+
+    @FindBy(xpath = "(//*[@data-product-id='4'])[3]")
+    public WebElement recommendProductAddToCartLink;
 }
