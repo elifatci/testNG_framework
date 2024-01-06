@@ -280,6 +280,19 @@ public class AutomationExercisePage {
     @FindBy(css = ".title.text-center")
     public WebElement accountDeleteText;
 
+    @FindBy(className = "single-widget")
+    public WebElement subscription;
+
+    @FindBy(css = ".fa.fa-angle-up")
+    public WebElement upwardButton;
+
+    @FindBy(css = ".fa.fa-home")
+    public WebElement homeButton;
+
+    @FindBy(xpath = "(//*[text()='Full-Fledged practice website for Automation Engineers'])[1]")
+    public WebElement advertisingText;
+
+
 
 
 
