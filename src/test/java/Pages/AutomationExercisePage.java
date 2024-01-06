@@ -254,4 +254,36 @@ public class AutomationExercisePage {
 
     @FindBy(xpath = "(//*[@data-product-id='4'])[3]")
     public WebElement recommendProductAddToCartLink;
+
+
+    @FindBy(id = "days")
+    public WebElement days;
+
+    @FindBy(id = "months")
+    public WebElement months;
+
+    @FindBy(id = "years")
+    public WebElement years;
+
+
+    @FindBy(id = "first_name")
+    public WebElement firstNameBox;
+
+    @FindBy(xpath = "(//*[@type='submit'])[1]")
+    public WebElement createAccount;
+
+
+    @FindBy(xpath = "//*[text()='Account Created!']")
+    public WebElement accountCreatedText;
+
+
+    @FindBy(css = ".title.text-center")
+    public WebElement accountDeleteText;
+
+
+
+
+
+
+
 }
