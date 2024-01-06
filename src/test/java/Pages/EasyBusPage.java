@@ -125,6 +125,16 @@ public class EasyBusPage {
     @FindBy(xpath = "//tr//td[3]")
     public List<WebElement> supportTicketsTables;
 
+    @FindBy(xpath = "(//*[@alt='Logo'])[2]")
+    public WebElement footerLogo;
+
+    @FindBy(xpath = "(//*[@alt='Logo'])[1]")
+    public WebElement headerLogo;
+
+    @FindBy(xpath = "(//*[@class='title'])[2]")
+    public WebElement everyJourneyText;
+
+
 
 
 
