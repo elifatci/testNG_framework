@@ -2,16 +2,17 @@ package tests.testNG_18;
 
 import Pages.AutomationExercisePage;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class T2 {
+public class T3 {
 
     @Test
-    public void exercise25(){
+    public void exercise26(){
         //1. Launch browser
         //2. Navigate to url 'http://automationexercise.com'
         Driver.getDriver().get(ConfigReader.getProperty("automationUrl"));
@@ -25,12 +26,11 @@ public class T2 {
         actions.sendKeys(Keys.END).perform();
         //5. Verify 'SUBSCRIPTION' is visible
         AutomationExercisePage automationExercisePage=new AutomationExercisePage();
-        SoftAssert softAssert1=new SoftAssert();
         softAssert.assertTrue(automationExercisePage.subscription.isDisplayed());
-        //6. Click on arrow at bottom right side to move upward
-        automationExercisePage.upwardButton.click();
+        //6. Scroll up page to top
+        actions.sendKeys(Keys.HOME).perform();
         //7. Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen
         softAssert.assertTrue(automationExercisePage.homeButton.isDisplayed());
-        softAssert1.assertTrue(automationExercisePage.advertisingText.isDisplayed());
+        softAssert.assertTrue(automationExercisePage.advertisingText.isDisplayed());
     }
 }
