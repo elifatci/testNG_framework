@@ -1,5 +1,6 @@
 package Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -143,6 +144,44 @@ public class EasyBusPage {
 
     @FindBy(xpath = "(//*[@class='content'])[7]")
     public WebElement aprilComment;
+
+    @FindBy(id = "username")
+    public WebElement adminUsername;
+
+    @FindBy(id = "pass")
+    public WebElement adminPassword;
+
+    @FindBy(xpath = "//*[@type='submit']")
+    public WebElement adminLogin;
+
+    @FindBy(xpath = "(//*[@class='menu-title'])[35]")
+    public WebElement manageTripsLink;
+
+    @FindBy(xpath = "(//*[@class='menu-title'])[36]")
+    public WebElement routeLink;
+
+    @FindBy(xpath = "(//*[@class='la la-pen'])[1]") public WebElement iconPenFirstAction;
+    @FindBy(xpath = "//*[@placeholder='Enter Name']") public WebElement textBoxName;
+    @FindBy(xpath = "(//*[@class='select2-selection__rendered'])[1]") public WebElement dropdownBox;
+    @FindBy(xpath = "(//*[@role='option'])[2]") public WebElement Austin;
+    @FindBy(xpath = "(//*[@class='select2-selection__rendered'])[2]") public WebElement dropDownEndTo;
+    @FindBy(xpath = "//*[@for='has-stoppage']") public WebElement radioButtonHasMoreStoppage;
+    @FindBy(xpath = "(//*[@class='las la-times'])[3]") public WebElement iconXDropdown;
+    @FindBy(xpath = "(//*[@role='presentation'])[7]") public WebElement dropdownTwoSelectStoppage;
+    @FindBy(css = ".table-responsive--sm.table-responsive") public WebElement tableRoute;
+
+
+    @FindBy(css = ".badge.badge--success") public WebElement textFirstStatus;
+    @FindBy(css = ".las.la-info-circle") public WebElement buttonFirstAction;
+    @FindBy(className = "modal-title") public WebElement textTicketBookingHistory;
+    @FindBy(css = ".w-auto.btn--close") public WebElement iconX;
+    @FindBy(css = ".btn.btn--danger.w-auto.btn--sm.px-3") public WebElement buttonClose;
+
+
+
+
+
+
 
 
 

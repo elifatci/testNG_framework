@@ -27,6 +27,8 @@ public class AutomationTesting {
     @FindBy(css = ".button.wc-forward") public WebElement buttonViewBasket;
     @FindBy(css = ".description_tab.active") public WebElement buttonDescription;
     @FindBy(xpath = "(//*[@class='layoutArea'])[2]") public WebElement textProductDescription;
+    @FindBy(className = "reviews_tab") public WebElement buttonReviews;
+    @FindBy(css = "#comments") public WebElement textReviews;
 
 
 
