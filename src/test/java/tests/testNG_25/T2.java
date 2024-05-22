@@ -24,6 +24,7 @@ public class T2 {
         int actualSize=automationTesting.listProducts.size();
         Assert.assertEquals(actualSize,expectedSize);
         //6) The Home page must contains only three Arrivals
+
         //7) Now click the image in the Arrivals
 
         //8) Test whether it is navigating to next page where the user can add that book into his basket.
